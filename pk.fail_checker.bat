@@ -15,7 +15,7 @@ echo "          |  __ \| |/ / |  ____|  (_) |  / ____| |             | |        
 echo "          | |__) | ' /  | |__ __ _ _| | | |    | |__   ___  ___| | _____ _ __           "
 echo "          |  ___/|  <   |  __/ _` | | | | |    | '_ \ / _ \/ __| |/ / _ \ '__|          "
 echo "          | |    | . \ _| | | (_| | | | | |____| | | |  __/ (__|   <  __/ |             "
-echo "          |_|    |_|\_(_)_|  \__,_|_|_|  \_____|_| |_|\___|\___|_|\_\___|_| v1.2        "
+echo "          |_|    |_|\_(_)_|  \__,_|_|_|  \_____|_| |_|\___|\___|_|\_\___|_| v1.3        "
 echo.                                                                            
 echo ------------------------------------------------------------------------------------------
 :: Inform the user about the action and provide the link
@@ -45,7 +45,7 @@ if defined NEWEST_FOLDER (
     echo Found newest folder at: !NEWEST_FOLDER_PATH!
 ) else (
     echo No folders found in the specified directory.
-    exit /b 1
+    pause
 )
 
 :: Search for the newest file in the newest folder
@@ -60,8 +60,11 @@ if defined NEWEST_FILE (
     set "FILE_PATH=!NEWEST_FOLDER_PATH!\!NEWEST_FILE!"
     echo Found newest file at: !FILE_PATH!
 ) else (
-    echo No files found in the newest folder.
-    exit /b 1
+    echo No Firmware File Was Found.
+	echo Please open Windows Update, go to Advanced Options, then Optional Updates.
+	echo Make sure to install all updates, reboot, and run the script again.
+    echo Press any key to exit...
+    pause >nul
 )
 
 :: Define temporary file for curl response
