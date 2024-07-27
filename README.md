@@ -13,6 +13,7 @@ After the script has ran you have the option to view Binarly's full report of th
 
 ## Troubleshooting:
 Windows is trying to protect my PC:
+
 This will always appear no matter what batch file you download and attempt to run. This is simply a security feature built into Windows.
 Windows is not stating that the file is malicious, only that it could be.
 There is nothing in this script that has any sort of ill intent. Please feel free to review the code as I've commented it the best I can to show what
@@ -26,4 +27,6 @@ Select "More Info"
 Select "Run Anyway"
 
 ![Script Results](https://michaelreynolds.tech/wp-content/uploads/2024/07/windows_protect_2.png)
+
+If you have any questions, concerns, or improvements, please feel free to reach out!
 
