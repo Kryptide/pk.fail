@@ -9,7 +9,7 @@ There is an option to view the RAW output, which includes all the hashes to your
 After the script has ran you have the option to view Binarly's full report of the vulnerability on their website.
 
 
-![Script Results](https://michaelreynolds.tech/wp-content/uploads/2024/07/pkfail_checker_full_blurred.png)
+![Script Results](https://michaelreynolds.tech/wp-content/uploads/2024/07/pkfailchecker.png)
 
 ## Troubleshooting:
 Windows is trying to protect my PC:
