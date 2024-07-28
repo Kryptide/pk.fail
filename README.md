@@ -1,4 +1,5 @@
 # PK.Fail Checker
+## About
 This is a batch file that will check if your firmware has the UEFI/Bios vulnerability using Binarly's PK.Fail checker.
 The script will find your firmware file automatically and upload it to Binarlys online checker.
 The output will give a status of "vulnerable" or  "not-vulnerable".
